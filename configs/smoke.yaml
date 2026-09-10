@@ -1,0 +1,24 @@
+# Tiny config for smoke test / CI (CPU, seconds).
+data:
+  root: data/nuscenes
+  n_cams: 4
+  image_h: 64
+  image_w: 96
+  xbound: [-20.0, 20.0, 1.0]
+  ybound: [-20.0, 20.0, 1.0]
+  zbound: [-5.0, 5.0, 10.0]
+  dbound: [4.0, 25.0, 2.0]
+  synth_len: 6
+
+model:
+  context_channels: 16
+  num_classes: 2
+  cam_base: 16
+  bev_base: 32
+
+train:
+  epochs: 2
+  batch_size: 2
+  lr: 0.001
+  weight_decay: 0.0001
+  num_workers: 0

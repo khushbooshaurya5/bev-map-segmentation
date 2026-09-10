@@ -1,0 +1,23 @@
+# Full Lift-Splat-Shoot BEV segmentation on nuScenes (needs a GPU).
+data:
+  root: data/nuscenes
+  n_cams: 6
+  image_h: 128
+  image_w: 352
+  xbound: [-50.0, 50.0, 0.5]
+  ybound: [-50.0, 50.0, 0.5]
+  zbound: [-10.0, 10.0, 20.0]
+  dbound: [4.0, 45.0, 1.0]
+
+model:
+  context_channels: 64
+  num_classes: 2          # background + vehicle
+  cam_base: 32
+  bev_base: 64
+
+train:
+  epochs: 30
+  batch_size: 4
+  lr: 0.001
+  weight_decay: 0.0001
+  num_workers: 6

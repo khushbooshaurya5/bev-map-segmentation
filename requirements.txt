@@ -1,0 +1,5 @@
+torch>=1.13
+numpy>=1.21
+pyyaml>=6.0
+pillow>=9.0
+# nuscenes-devkit>=1.1  # required only for full nuScenes training

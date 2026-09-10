@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bevseg"
+version = "0.1.0"
+description = "Camera-to-BEV semantic map segmentation (Lift-Splat-Shoot) on nuScenes"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["torch", "numpy", "pyyaml", "pillow"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
