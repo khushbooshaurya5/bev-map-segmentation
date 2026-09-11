@@ -1,5 +1,7 @@
 # BEV Map Segmentation — Lift, Splat, Shoot
 
+### ▶ Live demo: **https://khushbooshaurya5.github.io/khushboo-portfolio-projects/demos/bev-map-segmentation/**
+
 Turn surround-view **camera** images into a top-down **bird's-eye-view (BEV)
 semantic map** — no LiDAR at inference. A from-scratch implementation of
 Lift-Splat-Shoot (Philion & Fidler, ECCV 2020), the method behind most modern
